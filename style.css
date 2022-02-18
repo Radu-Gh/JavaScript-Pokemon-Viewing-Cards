@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 21% 16%);
+}
+
+html{
+    min-height: 100%;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/39cb06a2-39b2-4b54-8efa-c294fab1e52c/ddumeg9-af81320c-fba3-4dbb-af44-7bfcd61f2bb5.jpg/v1/fill/w_5000,h_2813,q_75,strp/151_pokemon_wallpaper_by_drums107_ddumeg9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjgxMyIsInBhdGgiOiJcL2ZcLzM5Y2IwNmEyLTM5YjItNGI1NC04ZWZhLWMyOTRmYWIxZTUyY1wvZGR1bWVnOS1hZjgxMzIwYy1mYmEzLTRkYmItYWY0NC03YmZjZDYxZjJiYjUuanBnIiwid2lkdGgiOiI8PTUwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.cR6bbHgUn3vFyXPghMN-i8cXkfCcmJtvRpqlZHtD9fU);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#card{
+    display: flex;
+}
+
+#cardFront{
+    display: none;
+    flex-direction: column;
+    border-radius: 5%;
+    border: yellow 20px solid;
+    height: 650px;
+    width: 435px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.title_content{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+}
+
+#title
+{
+    display: flex;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#hitpoint{
+    display: flex;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#mainPic{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 22px;
+    /* height: 250px; */
+    width: 350px;
+    border: rgb(212, 212, 50) 7px solid;
+}
+
+#picture{
+    height: 190px;
+    width: 330px;
+    margin-top: 3px;
+    display: inline-block;
+}
+
+#description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+#desctitle{
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+    text-align: center;
+    background-color: #c99702;
+    border: rgb(212, 212, 50) 2px solid;
+    font-weight: bold;
+    width: 300px;
+}
+
+#ability{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 350px;
+    margin: 3px;
+    height: 50px;
+}
+
+#move{
+    display: flex;
+    width: 370px;
+    height: 130px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 12px;
+}
+
+#moveText{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 300px;
+    margin-left: 3px;
+}
+
+#movePower{
+    font-size: larger;
+}
+
+#moveScore{
+    text-align: center;
+    font-weight: 800;
+}
+
+#score{
+    display: flex;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+hr{
+    margin-left:  15px;
+    margin-right: 15px;
+}
+
+.stats{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 45px;
+    font-weight: 900;
+    font-size: larger;
+    justify-content: space-around;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25%;
+    align-items: center;
+}
+
+#myInput{
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    font-weight: 700;
+}
+
+#submit{
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#submit,
+#myInput{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: var(--clr-neon) 4px solid;
+    padding: 0.17em 0.7em;
+    border-radius: 5px;
+    background-color: var(--clr-bg);
+
+    text-shadow: 
+        0 0 0.1em hsl(0, 0%, 100% / 0.3),
+    0 0 0.5em var(--clr-neon);
+    
+    box-shadow: 
+        inset 0 0 0.5em 0 var(--clr-neon),
+    0 0 0.5em 0 var(--clr-neon);
+    
+    position: relative;
+}
+
+#myInput::before,
+#submit::before{
+    content: '';
+    position: absolute;
+    background: var(--clr-neon);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.7;
+}
+
+#submit::before{
+    pointer-events: none;
+}
+
+#submit:hover{
+    background: var(--clr-neon);
+    color: var(--clr-bg);
+    text-shadow: none;
+}
+
+/* ============================= */
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon card project, now with PokeAPI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="card"> 
+            <div class="poke" id="cardFront">
+            
+                <div class="title_content">
+                    <div class="text" id="title"></div>
+                
+                    <div class="text" id="hitpoint"></div>
+                </div>
+            
+                <div id="mainPic">
+                    <img id="picture" src="">
+                </div>
+            
+                <div id="description">
+                    <div class="text" id="desctitle" ></div> 
+                    <div  id="ability">
+                        <div id="abilityName"></div>  
+                    </div>
+                 
+                </div>
+            
+                <hr color="black">
+            
+                <div id="move">
+                    <div id="moveText">
+                        <div id="moveName"></div>
+                    </div>
+
+                    <div >
+                        <div id="movePower"></div>
+                        <div id="moveScore"></div>
+                    </div>
+                </div>
+            
+            
+                <hr color="black">
+            
+                <div class="stats">
+                    <div class="stat" id="stat1">
+                        <div id="stat1Name"></div>
+                        <div id="stat1Value"></div>
+                    </div>
+                
+                    <div class="stat" id="stat2">
+                        <div id="stat2Name"></div>
+                        <div id="stat2Value"></div>
+                    </div>
+
+                    <div class="stat" id="stat3">
+                        <div id="stat3Name"></div>
+                        <div id="stat3Value"></div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div id="form">
+            <input id="myInput" type="text" name="pokeId" placeholder="Type the pokemon Id...">
+            <button id="submit" type="button">Search</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
